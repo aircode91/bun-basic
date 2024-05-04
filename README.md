@@ -78,6 +78,6 @@ workspaces: [
     packages/*
 ]
 ```
-![screenshots](packages.png)
+![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/packages.png??raw=true)
 
 
