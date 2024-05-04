@@ -84,7 +84,9 @@ workspaces: [
 
 # Http server
 - bun serve
+
 ![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/http-server.png??raw=true)
+
 ![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/http-server-response.png??raw=true)
 
 # File IO
