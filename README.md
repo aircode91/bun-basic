@@ -84,8 +84,8 @@ workspaces: [
 
 # Http server
 - bun serve
-![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/htthttp-server.png??raw=true)
-![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/htthttp-server-response.png??raw=true)
+![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/http-server.png??raw=true)
+![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/http-server-response.png??raw=true)
 
 # File IO
 - reading file bun.file()
@@ -93,4 +93,6 @@ workspaces: [
 const file = Bun.file('.env');
 const content = await file.text();
 console.log(content);
+Bun.write('.env.test', content)
 ```
+
