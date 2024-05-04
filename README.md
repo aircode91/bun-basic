@@ -111,3 +111,14 @@ console.info(result);
 
 ![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/hashing.png??raw=true)
 
+# Semantic Versioning
+- By default Major.Minor.Path => 1.2.3
+```bash
+const appVersion = "1.2.3";
+
+console.info(Bun.semver.satisfies(appVersion, "1.x")); // true
+console.info(Bun.semver.satisfies(appVersion, "2.x")); // false
+console.info(Bun.semver.satisfies(appVersion, ">=1.0.0")); // true
+console.info(Bun.semver.satisfies(appVersion, "<2.0.0")); // true
+console.info(Bun.semver.satisfies(appVersion, "^1.0.0")); // true
+```
