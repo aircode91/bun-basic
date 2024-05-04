@@ -97,4 +97,17 @@ const content = await file.text();
 console.log(content);
 Bun.write('.env.test', content)
 ```
+# Hashing
+- Bun.password()
+```bash
+const passwordHash = await Bun.password.hash('password', {
+    algorithm: 'bcrypt',
+    cost: 10
+});
+console.info(passwordHash);
+const result = await Bun.password.verify('password', passwordHash);
+console.info(result);
+```
+
+![alt text](https://github.com/aircode91/bun-basic/blob/master/screenshots/hashing.png??raw=true)
 
